@@ -8,9 +8,15 @@ form.addEventListener('submit', function(e){
     let valorA = Number(campoA.value);
     let valorB = Number(campoB.value);
 
+    const containerMensagemSucesso = document.querySelector('.sucess-message');
+    const containerMensagemErro = document.querySelector('.error-message');
+
+
     if ( valorB > valorA ) {
-    console.log("Tudo certo! Formulário válido.");
+        containerMensagemSucesso.style.display = 'block';
+        containerMensagemErro.style.display = 'none';
 } else {
-    console.log("Erro! B precisa ser maior que A.");
+        containerMensagemSucesso.style.display = 'none';
+        containerMensagemErro.style.display = 'block';
 }
 })
