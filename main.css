@@ -57,3 +57,21 @@ button {
 button:hover {
     background-color: #fff200;
 }
+
+.sucess-message{
+    color: #fff;
+    font-weight: bolder;
+    background-color: rgb(0, 128, 0);
+    margin-top: 10px;
+    padding: 12px;
+    display: none;
+}
+
+.error-message{
+    color: #fff;
+    background-color: rgb(186, 0, 0);
+    font-weight: bolder;
+    margin-top: 10px;
+    padding: 12px;
+    display: none;
+}
